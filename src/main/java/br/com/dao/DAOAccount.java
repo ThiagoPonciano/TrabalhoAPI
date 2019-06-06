@@ -17,7 +17,7 @@ public class DAOAccount {
         Data.executeUpdate(c, s.toString(), t.getId(), t.getName(), t.getEmail(), t.getPassword());
     }
 
-    public static void update(Connection c, TOAccount t) throws Exception {
+    public static void editar(Connection c, TOAccount t) throws Exception {
         StringBuilder s = new StringBuilder();
         s.append(" update account set name = ?, email = ?, password = ? ");
         s.append(" where id = ? ");
@@ -51,32 +51,7 @@ public class DAOAccount {
         }
     }
 
-    public static TOAccount getByEmail(Connection c, TOAccount t) throws Exception {
 
-        StringBuilder s = new StringBuilder();
-        s.append(" select id, name, email, password, token, createdat, active, expiredat from account ");
-        s.append(" where ");
-        s.append(" email = ? ");
-        s.append(" and active ");
-
-        try (ResultSet rs = Data.executeQuery(c, s.toString(), t.getEmail())) {
-
-            if (rs.next()) {
-                TOAccount u = new TOAccount();
-                u.setId(rs.getString("id"));
-                u.setName(rs.getString("name"));
-                u.setEmail(rs.getString("email"));
-                u.setToken(rs.getString("token"));
-                u.setActive(rs.getBoolean("active"));
-                u.setCreatedAt(rs.getTimestamp("createdat"));
-                u.setExpiredAt(rs.getTimestamp("expiredat"));
-                return u;
-            } else {
-                return null;
-            }
-
-        }
-    }
 
     public static List<TOAccount> accounts(Connection c) throws Exception {
 
@@ -142,6 +117,15 @@ public class DAOAccount {
         s.append(" where id = ? ");
 
         Data.executeUpdate(c, s.toString(), u.getToken(), u.getExpiredAt(), u.getId());
+
+    }
+
+    public static void excluir(Connection c, int id) throws Exception {
+
+        StringBuilder sql = new StringBuilder();
+        sql.append(" delete from account where id = ? ");
+
+        Data.executeUpdate(c, sql.toString(), id);
 
     }
 

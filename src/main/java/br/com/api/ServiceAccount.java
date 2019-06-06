@@ -1,9 +1,7 @@
 package br.com.api;
 
 import br.com.bo.BOAccount;
-import br.com.fw.Cache;
 import br.com.to.TOAccount;
-import com.sun.corba.se.impl.oa.toa.TOA;
 import org.json.JSONObject;
 
 import javax.servlet.http.HttpServletRequest;
@@ -36,21 +34,11 @@ public class ServiceAccount {
 
     }
 
-    @POST
-    @Path("forgot")
-    @Consumes("application/json;charset=utf-8")
-    public void forgot(TOAccount u) throws Exception {
-        TOAccount t = BOAccount.forgot(u);
-        if(t == null){
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
-        }
-    }
-
     @PUT
     @Consumes("application/json;charset=utf-8")
-    public void update(@HeaderParam("token") String token, TOAccount u) throws Exception {
+    public void editar(@HeaderParam("token") String token, TOAccount u) throws Exception {
         if (BOAccount.isValid(token)) {
-            BOAccount.update(u);
+            BOAccount.editar(u);
         } else {
             response.sendError(HttpServletResponse.SC_FORBIDDEN);
         }
@@ -60,12 +48,12 @@ public class ServiceAccount {
     @POST
     @Consumes("application/json;charset=utf-8")
     @Produces("application/json;charset=utf-8")
-    public String insert(TOAccount u) throws Exception {
+    public String inserir(TOAccount u) throws Exception {
         TOAccount t = BOAccount.insert(u);
         JSONObject j = new JSONObject();
         j.put("id", t.getId());
 
-//        response.sendError(HttpServletResponse.SC_CREATED);
+        response.sendError(HttpServletResponse.SC_CREATED);
 
         return j.toString();
     }
@@ -87,7 +75,7 @@ public class ServiceAccount {
 
     @GET
     @Produces("application/json;charset=utf-8")
-    public List<TOAccount> accounts() throws Exception {
+    public List<TOAccount> listar() throws Exception {
         return BOAccount.accounts();
     }
 

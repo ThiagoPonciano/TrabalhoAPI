@@ -2,7 +2,6 @@ package br.com.api;
 
 import br.com.bo.BOCliente;
 import br.com.to.TOCliente;
-import org.json.JSONObject;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,12 +22,14 @@ public class ServiceCliente {
     @POST
     @Consumes("application/json;charset=utf-8")
     @Produces("application/json;charset=utf-8")
-    public void post(TOCliente u) throws Exception {
+    public void inserir(TOCliente u) throws Exception {
 
         BOCliente.inserir(u);
         response.sendError(HttpServletResponse.SC_CREATED);
 
     }
+
+
 
 
 }
