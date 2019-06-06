@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="601088f7-a695-4876-b9a5-b2461db8d1a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceFormaPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceLocacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/api/ServiceVeiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOFormaPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOLocacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bo/BOVeiculos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOFormaPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOLocacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/dao/DAOVeiculos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/DateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/Encrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/Guid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fw/VOCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOFormaPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOLocacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/to/TOVeiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="601088f7-a695-4876-b9a5-b2461db8d1a2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -279,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559862108867" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559862109217" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,12 +243,12 @@
       <workItem from="1559693898864" duration="2011000" />
       <workItem from="1559773905904" duration="4354000" />
       <workItem from="1559780518636" duration="3855000" />
-      <workItem from="1559858613080" duration="3234000" />
+      <workItem from="1559858613080" duration="3596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13454000" />
+    <option name="totallyTimeSpent" value="13816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
