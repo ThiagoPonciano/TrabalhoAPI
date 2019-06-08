@@ -12,8 +12,7 @@ import java.util.List;
 public class Data {
 
     public static Connection openConnection() throws Exception {
-//        return openConnectionMySql("localhost", "task", "root", "");
-        return openConnectionPostgre("localhost", "locadora", "root", "");
+        return openConnectionMySql("localhost", "locadora", "root", "");
     }
 
     public static Connection openConnectionMySql(String server, String database, String user, String password) throws Exception {
@@ -21,10 +20,6 @@ public class Data {
         return DriverManager.getConnection("jdbc:mysql://" + server + ":3306/" + database, user, password);
     }
 
-    public static Connection openConnectionPostgre(String server, String database, String user, String password) throws Exception {
-        Class.forName("org.postgresql.Driver");
-        return DriverManager.getConnection("jdbc:postgresql://" + server + ":5432/" + database, user, password);
-    }
 
     public static void closeConnection(Connection con) throws SQLException {
         if (con != null) {

@@ -79,5 +79,15 @@ public class ServiceAccount {
         return BOAccount.accounts();
     }
 
+    @DELETE
+    @Path("excluir")
+    @Produces("application/json;charset=utf-8")
+    public void excluir(@HeaderParam("token") String token, @HeaderParam("idaccount") int idaccount) throws Exception {
+        if(BOAccount.isValid(token)){
+            BOAccount.excluir(idaccount);
+        } else {
+            response.sendError(HttpServletResponse.SC_FORBIDDEN);
+        }
+    }
 
 }

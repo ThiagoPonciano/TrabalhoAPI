@@ -3,15 +3,12 @@ package br.com.bo;
 import br.com.dao.DAOAccount;
 import br.com.fw.*;
 import br.com.to.TOAccount;
-import com.sun.corba.se.impl.oa.toa.TOA;
 
 import java.sql.Connection;
 import java.util.List;
 
 public class BOAccount {
 
-
-    // falta o excluir
 
     public static boolean isValid(String token) throws Exception {
         try (Connection c = Data.openConnection()) {
@@ -46,6 +43,7 @@ public class BOAccount {
 
     public static void editar(TOAccount u) throws Exception {
         try(Connection c = Data.openConnection()){
+            u.setPassword(Encrypt.sha1(u.getPassword()));
             DAOAccount.editar(c, u);
         }
     }

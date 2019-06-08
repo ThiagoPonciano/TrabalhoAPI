@@ -5,11 +5,9 @@ import br.com.to.TOCliente;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
+import java.util.List;
 
 @Path("cliente")
 public class ServiceCliente {
@@ -29,7 +27,25 @@ public class ServiceCliente {
 
     }
 
+    @PUT
+    @Consumes("application/json;charset=utf-8")
+    public void editar(@HeaderParam("idcliente") int idcliente, TOCliente u) throws Exception {
+        // colocar metodo que busca pelo id do cliente
+            BOCliente.editar(u);
+    }
 
+    @GET
+    @Produces("application/json;charset=utf-8")
+    public List<TOCliente> listar() throws Exception {
+        return BOCliente.listar();
+    }
 
+    @DELETE
+    @Path("excluir")
+    @Produces("application/json;charset=utf-8")
+    public void excluir(@HeaderParam("idcliente") int idcliente) throws Exception {
+        // colocar metodo que busca pelo id do cliente
+            BOCliente.excluir(idcliente);
+    }
 
 }
